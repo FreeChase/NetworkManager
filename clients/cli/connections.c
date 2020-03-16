@@ -4950,10 +4950,8 @@ nmc_process_connection_properties (NmCli *nmc,
 
 			if (!set_option (nmc, connection, chosen, value, error))
 				return FALSE;
-
-			first = FALSE;
 		}
-
+		first = FALSE;
 	} while (*argc);
 
 	return TRUE;
